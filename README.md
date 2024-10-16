@@ -50,3 +50,6 @@ curl -X POST http://localhost:8080/profiles \
     "postalCode": "12345",
     "country": "USA"
 }'
+```
+
+Author: [Ian Macavilca](ianmacavilca@gmail.com)
