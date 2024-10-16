@@ -14,7 +14,7 @@ import pe.upc.learningcenterplatform.shared.domain.model.aggregates.AuditableAbs
 public class Profile extends AuditableAbstractAggregateRoot<Profile> {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Ensure this matches the parent class
     private Integer id;
 
     @Embedded
