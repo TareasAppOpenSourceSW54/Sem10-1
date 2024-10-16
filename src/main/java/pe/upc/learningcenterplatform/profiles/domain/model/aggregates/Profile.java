@@ -13,6 +13,10 @@ import pe.upc.learningcenterplatform.shared.domain.model.aggregates.AuditableAbs
 @Setter
 public class Profile extends AuditableAbstractAggregateRoot<Profile> {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
     @Embedded
     private PersonName name;
 

@@ -8,7 +8,7 @@ import pe.upc.learningcenterplatform.profiles.domain.model.valueobjects.EmailAdd
 import java.util.Optional;
 
 @Repository
-public interface ProfileRepository extends JpaRepository<Profile, String> {
+public interface ProfileRepository extends JpaRepository<Profile, Integer> {
 
     Optional<Profile> findByEmail(EmailAddress emailAddress);
 
